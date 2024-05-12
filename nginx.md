@@ -24,7 +24,7 @@ Nginx for do the taks,need a little hardware sources and can do the different wo
 ### These are brief descripiton of the nginx.
 
 Now you need to install nginx,what should you do?
-In step 1 you have to open terminal on linux then you have to type  `sudo apt update ` and then type "sudo apt install nginx"
+In step 1 you have to open terminal on linux then you have to type  ``` sudo apt update ``` and then type "sudo apt install nginx"
 *Note : if you have install apache in your sytem before , you cant install nginx*
 Then you after install type "sudo systemctl status nginx" you have to give massage like this "
      Loaded: loaded (/lib/systemd/system/nginx.service; enabled; vendor preset: enabled)
