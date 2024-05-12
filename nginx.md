@@ -1,4 +1,4 @@
-#Lets talk about nginx
+**Lets talk about nginx**
 What is nginx?
 Nginx is open source software for web serving,reverse proxying,caching,load balancing, media streaming and something else like that.for know what is nginx we have to consider nginx is designed as a web server with the best performance.In addition to the http server functionality,nginx can act as proxy server for email service such as EMTP,IMPA,POP3 and a reverse proxy or load balancing system for UDP,TCP AND HTTP servers.
 You might be wondering what a web server is?
