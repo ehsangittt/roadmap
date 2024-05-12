@@ -11,12 +11,11 @@ The goal of nginx is to be fastest web server around. since nginx start to work 
 
 # How nginx server works?
 Nginx for do the taks,need a little hardware sources and can do the different works in the same time.nginx unlike apache dont make a new process for every HTTP request (..)and this a reason why nginx has a beeter speed and function.(..)
-
-***Nowdays***,many hosting companies use nginx web server because this web server has many advantages.
-Lets talk about the advantages
-Nginx has a powerful load balancer
-Has exclusive reverse proxy
-Has cach memory
+**Nowdays**,many hosting companies use nginx web server because this web server has many **advantages**.
+## Lets talk about the advantages
+* Nginx has a powerful load balancer
+* Has exclusive reverse proxy
+* Has cach memory
 Compatibility with different programing such as python and rubi
 Safe and has a good function 
 this are little advantages of the nginx
