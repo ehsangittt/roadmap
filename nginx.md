@@ -28,7 +28,9 @@ In step 1 you have to open terminal on linux then you have to type
 ```
 sudo apt update
 ``` 
-and then type "sudo apt install nginx"
+and then
+ ``` sudo apt install nginx
+ ```
 *Note : if you have install apache in your sytem before , you cant install nginx*
 Then you after install type "sudo systemctl status nginx" you have to give massage like this "
      Loaded: loaded (/lib/systemd/system/nginx.service; enabled; vendor preset: enabled)
