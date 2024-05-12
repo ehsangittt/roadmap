@@ -16,11 +16,11 @@ Nginx for do the taks,need a little hardware sources and can do the different wo
 * Nginx has a powerful load balancer
 * Has exclusive reverse proxy
 * Has cach memory
-Compatibility with different programing such as python and rubi
-Safe and has a good function 
-this are little advantages of the nginx
-after all nginx has some disadvantages for example nginx is open source, but users don't have much control over its modules and can't even disable them, so you face limitations for customizing your web server.
-These are brief descripiton of the nginx.
+* Compatibility with different programing such as python and rubi
+* Safe and has a good function 
+### This are little advantages of the nginx  
+ **After all** nginx has some disadvantages for example nginx is open source, but users don't have much control over its modules and can't even disable them, so you face limitations for customizing your web server.
+### These are brief descripiton of the nginx.
 Now you need to install nginx,what should you do?
 In step 1 you have to open terminal on linux then you have to type "sudo apt update" and then type "sudo apt install nginx"
 *Note : if you have install apache in your sytem before , you cant install nginx*
