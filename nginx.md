@@ -8,9 +8,11 @@ In terms of hardware,web server is a stype of server that save web server softwa
 
 ## Lets back to nginx.
 The goal of nginx is to be fastest web server around. since nginx start to work , another web servers such as apache can not be fast and good like nginx and the html pages become to the dynamic and multifaceted content.Now nginx supports all the components of the modern web inculding web socket, HTTP/2,gRPC and streaming of multiple video formats such as HDS,HLS,RTMP,etc.
-How nginx server works?
+
+# How nginx server works?
 Nginx for do the taks,need a little hardware sources and can do the different works in the same time.nginx unlike apache dont make a new process for every HTTP request (..)and this a reason why nginx has a beeter speed and function.(..)
-Nowdays,many hosting companies use nginx web server because this web server has many advantages.
+
+***Nowdays***,many hosting companies use nginx web server because this web server has many advantages.
 Lets talk about the advantages
 Nginx has a powerful load balancer
 Has exclusive reverse proxy
