@@ -39,8 +39,13 @@ sudo apt-get remove apache
 ``` 
 Then you need to check if Apache is on your system or not for this you have to write this order
 ``` 
-where is apache
+whereis apache
 ``` 
+Maybe you see the apache configuration file , for delet it you have to print 
+``` 
+sudo rm -rf /etc/apache2/
+``` 
+After you do this you can install nginx with no problem.
 
 
 *
