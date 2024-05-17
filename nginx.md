@@ -46,8 +46,6 @@ Maybe you see the apache configuration file , for delet it you have to print
 sudo rm -rf /etc/apache2/
 ``` 
 After you do this you can install nginx with no problem.
-
-
 *
 Then you after install type "sudo systemctl status nginx" you have to give massage like this "
      Loaded: loaded (/lib/systemd/system/nginx.service; enabled; vendor preset: enabled)
