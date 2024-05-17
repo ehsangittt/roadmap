@@ -46,14 +46,18 @@ Maybe you see the apache configuration file , for delet it you have to print
 sudo rm -rf /etc/apache2/
 ``` 
 After you do this you can install nginx with no problem.
-*
+
 Then you after install print
 ``` 
 sudo systemctl status nginx
 ``` 
- you have to give massage like this "
+ You have to receve massage like this **
      Loaded: loaded (/lib/systemd/system/nginx.service; enabled; vendor preset: enabled)
-     Active: active (running) since Sat 2020-05-02 20:25:43 UTC; 13s ago"
+     Active: active (running) since Sat 2020-05-02 20:25:43 UTC; 13s ago**
  If you see this , you have install nginx successfully. There is one more way to know is nginx install successfully or no 
- with use  ifconfig in terminal you can find your ip then coppy ip and use it in  http://YOUR_IP . after that if you see welcome to nginx its ok and work.
+ with use 
+ ``` 
+  ifconfig
+  ``` 
+    in terminal you can find your ip then coppy ip and use it in  http://YOUR_IP . after that if you see welcome to nginx its ok and work.
  
