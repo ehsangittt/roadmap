@@ -63,3 +63,4 @@ A hardware firewall is an independent system that operates separately from the c
 1. Constant attention on heavy traffic
 2. The double-edged sword of firewall rules
 3. Limited vision, limited power
+### This was an overview of the firewall description
