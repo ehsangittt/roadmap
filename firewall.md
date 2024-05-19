@@ -48,7 +48,7 @@ What is a software firewall? From essential computer programs to servers
 A software firewall is a computer program that is installed on a computer or server and is responsible for protecting the network from unwanted traffic.
 What is a hardware firewall? Computer independent system
 A hardware firewall is an independent system that operates separately from the computer and filters incoming information from the Internet. If you have an Internet modem router, it probably has a hardware firewall.
-#### What is the use of firewall?
+### What is the use of firewall?
 1. Defense against threats
  2. Recording and reviewing activities 
  3. Traffic filtering 
