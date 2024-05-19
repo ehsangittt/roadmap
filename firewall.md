@@ -54,7 +54,7 @@ A hardware firewall is an independent system that operates separately from the c
  3. Traffic filtering 
   4. Access control and blocking
 ### What are the advantages and disadvantages of firewall?
-4 examples of firewall advantages
+**4 examples of firewall advantages**
 1. Privacy shield and network security
 2. Light speed against attacks
 3. Security rules
