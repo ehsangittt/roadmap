@@ -27,19 +27,23 @@ Now you need to install nginx,what should you do?
 In step 1 you have to open terminal on ubuntu then you have to type
 ```
 sudo apt update
+
 ``` 
 and then
  ``` 
  sudo apt install nginx
+ 
  ```
 *Note : if you have install apache in your sytem before , you cant install nginx, for uninstall apache 
 You have to write this order in terminal
 ``` 
 sudo apt-get remove apache
+
 ``` 
 Then you need to check if Apache is on your system or not for this you have to write this order
 ``` 
 whereis apache
+
 ``` 
 Maybe you see the apache configuration file , for delet it you have to print 
 ``` 
@@ -50,7 +54,9 @@ After you do this you can install nginx with no problem.
 Then you after install print
 ``` 
 sudo systemctl status nginx
+
 ``` 
+
  You have to receve massage like this **
      Loaded: loaded (/lib/systemd/system/nginx.service; enabled; vendor preset: enabled)
      Active: active (running) since Sat 2020-05-02 20:25:43 UTC; 13s ago**
