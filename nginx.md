@@ -60,9 +60,9 @@ sudo systemctl status nginx
 
 ```
 
- You have to receve massage like this **
-     Loaded: loaded (/lib/systemd/system/nginx.service; enabled; vendor preset: enabled)
-     Active: active (running) since Sat 2020-05-02 20:25:43 UTC; 13s ago**
+ You have to receve massage like this 
+   **  Loaded: loaded (/lib/systemd/system/nginx.service; enabled; vendor preset: enabled)
+     Active: active (running) since Sat 2020-05-02 20:25:43 UTC; 13s ago **
  If you see this , you have install nginx successfully. There is one more way to know is nginx install successfully or no 
  with use
  
