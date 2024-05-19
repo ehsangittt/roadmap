@@ -19,21 +19,14 @@ Static packet filtering firewalls are active in the third layer of the network. 
 These types of firewalls are active in layer 5. They check the application data packets while communicating and if they are healthy, they establish a stable connection between the two networks. After the connection is established, the firewall no longer monitors it.
 
 Compared to the previous type, this firewall goes one step further and pays attention not only to the address, but also to the type of communication between the sender and receiver. In addition to the origin and destination, he also checks the communication status and the safe path for information exchange. The session-level firewall has nothing to do with packet content. It means that if someone abuses this safe path, he can't do anything.
-
 ### 3. Stateful Inspection Firewall; All-round guard
 What is meant by this type of firewall? Unlike static packet filter firewalls, this firewall has the ability to monitor current communications and remember past communications. They started at layer 4 and today can monitor multiple layers, including the application layer (layer 7).
 
 This all-in-one watchdog checks what packets have already been exchanged and based on that it decides whether to allow a new packet to enter or not. In other words, it takes into account the history of communication. Just like the guard, in addition to the ID card, knows each person by his face and history.
-
-How the level inspection firewall works
-Stateful Inspection Firewall work process
 ### 4. Proxy Firewall (Proxy Firewall); Strict security specialist
 Proxy firewalls are another type of firewall known as programming level (layer 7) firewalls. This type of firewall is unique in reading and filtering programming protocols. Proxy firewalls are a combination of programmatic level inspection, "deep packet inspection (DPI)", or dynamic packet inspection.
 
 This guard has the status of a security expert. In addition to checking packages, it also reads their contents. That is, it detects, for example, what an e-mail contains, and based on that, it decides whether to reach the destination or not. Just like a strict guard, this firewall checks every packet of information to make it easy to worry about security. Of course, this high accuracy lowers the network speed.
-
-How the proxy firewall works
-Check packages and their contents with proxy firewall
 ### 5. Next-Generation Firewall; Advanced guard
 Evolving threats require better solutions, and next-generation firewalls are at the forefront of firewalls by combining the features of a traditional firewall with network intrusion prevention systems (IPS).
 
