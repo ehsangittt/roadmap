@@ -31,10 +31,11 @@ sudo apt update
 ```
 and then
 
- ``` 
+``` 
  sudo apt install nginx
  
- ```
+```
+
 *Note : if you have install apache in your sytem before , you cant install nginx, for uninstall apache 
 You have to write this order in terminal
 ``` 
