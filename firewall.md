@@ -14,7 +14,7 @@ Examining 7 layers of firewall levels
 ### What are the types of firewalls?
 ### 1. Packet-Filtering Firewall; A simple guard
 Static packet filtering firewalls are active in the third layer of the network. They check the data packets passing through the network one by one and issue permission to pass based on their origin and destination. Like every time someone wants to enter a parliament, they just check his ID card and if it is valid, let him enter.
-
+---
 Packet filtering firewall
 Introducing how the Packet-Filtering Firewall works
 ### 2. session level firewall (Circuit-Level Gateway Firewall); A smart guard
