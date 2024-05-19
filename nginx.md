@@ -70,5 +70,6 @@ sudo systemctl status nginx
   ifconfig
   
 ```
-    in terminal you can find your ip then coppy ip and use it in  http://YOUR_IP . after that if you see welcome to nginx its ok and work.
+
+in terminal you can find your ip then coppy ip and use it in  http://YOUR_IP . after that if you see welcome to nginx its ok and work.
  
