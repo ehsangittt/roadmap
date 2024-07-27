@@ -6,7 +6,7 @@ A type of technology that distributes the pressure between servers, how do we us
 *  software load balancing software is used to distribute the workload between several servers in this method. In fact, the software can intelligently distribute the load based on various factors such as the current load of the server and the geographical location.
 
 This was one of the types of load balancing, now we have to look at its advantages
-* 1-Increasing reliability: By using load balancer, the workload is regularly distributed between the servers, and as a result, the possibility of server failure due to high load is reduced. . 
-* 2- Improving performance: By distributing the load between several servers, it is possible to use more processing power and increase performance. So, by using load balancer, the user benefits from better speed and efficiency. 
-* 3- Resistance to attacks; The load balancer can act as a defense layer against malicious attacks and thus reduce disruptions.
-* 4- Ease of management: using the load balancer, network administrators can easily add and remove servers. This was load balancing
+* Increasing reliability: By using load balancer, the workload is regularly distributed between the servers, and as a result, the possibility of server failure due to high load is reduced. . 
+*  Improving performance: By distributing the load between several servers, it is possible to use more processing power and increase performance. So, by using load balancer, the user benefits from better speed and efficiency. 
+*  Resistance to attacks; The load balancer can act as a defense layer against malicious attacks and thus reduce disruptions.
+*  Ease of management: using the load balancer, network administrators can easily add and remove servers. This was load balancing
