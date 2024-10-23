@@ -9,10 +9,10 @@
 ## Here is a question What is inventory?
 ##### Inventory is file that you have to write the ip of server that you want to push it on.
 For example if you use vm you have to clone your ubuntu and then change the ip.
-## How to change ip?
-##### In the settign of ubuntu that you clone you,you have to go to Network, then put it Host-only Adapter insted of Nat.
-##### Then in terminal write 
+but also you may use server , in invetory you have to put username@ip_of_server. but before all you have to do something.
+you have to add SSH key to the the destination server. for this job you have to 
 ```
- "hostname -I "
+ssh-copy-id user@ip_address
+```
 
-```
+
