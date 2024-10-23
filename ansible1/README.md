@@ -1,4 +1,4 @@
-### Hello 
+## Hello 
 ##### Here is a doc for you to use ansible. 
 ##### First of all you have to write playbook.yml.
 ##### Then you have to run the playbook to know it is work or not.
@@ -12,7 +12,7 @@ you have to add SSH key to the the destination server. for this job you have to
 ```
 ssh-copy-id user@ip_address
 ```
-## How to run it?
+## How to run playbook?
 ```
  ansible-playbook -i inventory "name of file"
 ```
