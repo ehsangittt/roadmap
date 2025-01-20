@@ -59,4 +59,9 @@
         image: "{{ default_container_image }}"
         command: "{{ default_container_command }}"
         state: present
-      with_sequence: count={{ container_count }}
+      with_sequence: count={{ container_count }} 
+    - name: Install Docker Compose
+      get_url:
+        url: "https://github.com/docker/compose/releases/latest/download/docker-compose-linux-x86_64"
+        dest: "/usr/local/bin/docker-compose"
+        mode: '0755'

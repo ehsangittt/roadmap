@@ -1,3 +1,9 @@
-[web_servers]
-user_name@IP_server
+[all]
+37.32.31.27  ansible_user=ubuntu  ansible_ssh_pass=@ARCaptcha123
+
+
+
+
+
+
 
