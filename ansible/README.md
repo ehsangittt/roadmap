@@ -21,4 +21,4 @@ To install Docker offline, you need to follow a few steps: You need to install t
 then place the files in the Playbook, depending on the version you download, and then run the Playbook.<br>
 Note: You need to go to this <a href="https://download.docker.com/">link</a><br>
 then select the operating system then the version and finally download the files with the .deb extension<br>
-Note: You need to download the files <a href="http://containerd.io">containerd.io</a> , docker-ce , docker-ce-cli , docker-compose-plugin</p>
+Note: You need to download the files <a>containerd.io</a> , docker-ce , docker-ce-cli , docker-compose-plugin</p>
