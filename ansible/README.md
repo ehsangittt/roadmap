@@ -16,6 +16,8 @@ ssh-copy-id user@ip_address
 ```
  ansible-playbook -i inventory "name of file"
 ```
+---
+
 ### For example we have to install docker 
 #### There are 2 ways to install docker
 1- online
@@ -24,9 +26,9 @@ ssh-copy-id user@ip_address
 ###### To install Docker offline, you need to follow a few steps: You need to install the packages in the link below on a system that has internet access,
 then place the files in the Playbook, depending on the version you download, and then run the Playbook.
 
-Note: You need to go to this [link](https://download.docker.com/)
- then select the operating system then the version and finally download the files with the .deb extension
-Note: You need to download the files containerd.io , docker-ce , docker-ce-cli , docker-compose-plugin
+#### Note: You need to go to this [link](https://download.docker.com/)
+then select the operating system then the version and finally download the files with the .deb extension
+#### Note: You need to download the files containerd.io , docker-ce , docker-ce-cli , docker-compose-plugin
 
 
 
