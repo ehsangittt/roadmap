@@ -1,4 +1,3 @@
-<p class="has-line-data" data-line-start="0" data-line-end="1">GNU nano 7.2                                                                   <a href="http://README.md">README.md</a></p>
 <h2 class="code-line" data-line-start=1 data-line-end=2 ><a id="Hello_1"></a>Hello</h2>
 <p class="has-line-data" data-line-start="2" data-line-end="8">Here is a doc for you to use ansible.<br>
 First of all you have to write playbook.yml.Then you have to run the playbook to know it is work or not.For run the playbook you must have creart inventory.<br>
