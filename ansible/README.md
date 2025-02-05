@@ -13,7 +13,7 @@ you have to add SSH key to the the destination server. for this job you have to<
 <hr>
 <p class="has-line-data" data-line-start="18" data-line-end="28">For example we have to install docker<br>
 There are 2 ways to install docker<br>
-1- online<br>
+`1- online<br>`
 For the online version, you don’t need to do anything special. Simply run the playbook, and Docker will be installed for you.<br>
 2-offline<br>
 To install Docker offline, you need to follow a few steps: You need to install the packages in the link below on a system that has internet access,<br>
