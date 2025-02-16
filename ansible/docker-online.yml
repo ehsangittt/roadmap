@@ -77,3 +77,14 @@
         name: "{{ current_user.stdout }}"
         groups: docker
         append: yes
+    - name: Detect current user
+      become: no
+      command: whoami
+      register: current_user
+      changed_when: false   
+
+    - name: Add user to docker group
+      user:
+        name: "{{ current_user.stdout }}"
+        groups: docker
+        append: yes

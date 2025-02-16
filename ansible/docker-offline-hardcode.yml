@@ -1,0 +1,68 @@
+---
+- name: Install Docker and Docker Compose Offline
+  hosts: all
+  become: yes
+  tasks:
+
+    - name: Copy Docker packages to remote server
+      ansible.builtin.copy:
+        src: "/home/ehsan/docker-offline/"
+        dest: "/tmp/docker-offline/"
+        mode: "0644"
+
+    - name: Install Docker dependencies
+      ansible.builtin.apt:
+        deb: "/tmp/docker-offline/containerd.io_1.7.25-1_amd64.deb"
+
+    - name: Install Docker CE
+      ansible.builtin.apt:
+        deb: "/tmp/docker-offline/docker-ce_27.5.0-1~ubuntu.24.04~noble_amd64.deb"
+
+    - name: Install Docker CE CLI
+      ansible.builtin.apt:
+        deb: "/tmp/docker-offline/docker-ce-cli_27.5.0-1~ubuntu.24.04~noble_amd64.deb"
+
+    - name: Enable and start Docker service
+      ansible.builtin.systemd:
+        name: docker
+        enabled: yes
+        state: started
+
+    - name: Copy Docker Compose binary
+      ansible.builtin.copy:
+        src: "/home/ehsan/docker-offline/docker-compose-plugin_2.32.4-1~ubuntu.24.04~noble_amd64.deb"
+        dest: "/tmp/docker-offline/docker-compose-plugin_2.32.4-1~ubuntu.24.04~noble_amd64.deb"
+        mode: "0755"
+
+    - name: Verify Docker installation
+      ansible.builtin.command: docker --version
+      register: docker_version
+      changed_when: false
+
+    - name: Print Docker version
+      ansible.builtin.debug:
+        msg: "{{ docker_version.stdout }}"
+
+    - name: Verify Docker Compose installation
+      ansible.builtin.command: docker compose --version
+      register: compose_version
+      changed_when: false
+
+    - name: Print Docker Compose version
+      ansible.builtin.debug:
+        msg: "{{ compose_version.stdout }}"
+
+    - name: Detect current user
+      become: no
+      command: whoami
+      register: current_user
+      changed_when: false
+
+   
+
+    - name: Add user to docker group
+      user:
+        name: "{{ current_user.stdout }}"
+        groups: docker
+        append: yes
+

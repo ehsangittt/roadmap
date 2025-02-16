@@ -2,26 +2,30 @@
 - name: Install Docker and Docker Compose Offline
   hosts: all
   become: yes
+  vars_files:
+    - vars.yml
+
   tasks:
 
     - name: Copy Docker packages to remote server
       ansible.builtin.copy:
-        src: "/home/user/docker-offline/"
-        dest: "/tmp/docker-offline/"
+        src: "/home/ehsan/docker-offline/"
+        dest: "{{ package_path }}"
         mode: "0644"
 
     - name: Install Docker dependencies
       ansible.builtin.apt:
-        deb: "/tmp/docker-offline/containerd.io.deb"
-
+        deb: "{{ package_path }}{{ containerd_version }}"
+       # deb: "/tmp/docker-offline/containerd.io_1.7.25-1_amd64.deb"
     - name: Install Docker CE
       ansible.builtin.apt:
-        deb: "/tmp/docker-offline/docker-ce.deb"
+        deb: "{{ package_path }}{{ docker_ci_version }}"
+       # deb: "/tmp/docker-offline/docker-ce_27.5.0-1~ubuntu.24.04~noble_amd64.deb"
 
     - name: Install Docker CE CLI
       ansible.builtin.apt:
-        deb: "/tmp/docker-offline/docker-ce-cli.deb"
-
+        deb: "{{ package_path }}{{ docker_cli_version }}"
+       # deb: "/tmp/docker-offline/docker-ce-cli_27.5.0-1~ubuntu.24.04~noble_amd64.deb"
     - name: Enable and start Docker service
       ansible.builtin.systemd:
         name: docker
@@ -30,27 +34,27 @@
 
     - name: Copy Docker Compose binary
       ansible.builtin.copy:
-        src: "/home/user/docker-offline/docker-compose-plugin.deb"
-        dest: "/tmp/docker-offline/docker-compose-plugin.deb"
+        src: "/home/ehsan/docker-offline/{{ docker_compose_version }}"
+        dest: "{{ package_path }}{{ docker_compose_version }}"
         mode: "0755"
 
     - name: Verify Docker installation
       ansible.builtin.command: docker --version
-      register: docker_version
+      register: docker_version_output
       changed_when: false
 
     - name: Print Docker version
       ansible.builtin.debug:
-        msg: "{{ docker_version.stdout }}"
+        msg: "{{ docker_version_output.stdout }}"
 
     - name: Verify Docker Compose installation
       ansible.builtin.command: docker compose --version
-      register: compose_version
+      register: compose_version_output
       changed_when: false
 
     - name: Print Docker Compose version
       ansible.builtin.debug:
-        msg: "{{ compose_version.stdout }}"
+        msg: "{{ compose_version_output.stdout }}"
 
     - name: Detect current user
       become: no
@@ -58,11 +62,8 @@
       register: current_user
       changed_when: false
 
-   
-
     - name: Add user to docker group
       user:
         name: "{{ current_user.stdout }}"
         groups: docker
         append: yes
-

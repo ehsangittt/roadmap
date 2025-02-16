@@ -1,10 +1,2 @@
-
 [all]
-IP_____  ansible_user=_____  ansible_ssh_pass=_____
-
-
-
-
-
-
-
+194.5.193.65  ansible_user=ubuntu  ansible_ssh_pass=leWUDYtQMz
