@@ -2,8 +2,8 @@
 - name: Install Docker and Docker Compose Offline
   hosts: all
   become: yes
+ 
   tasks:
-
     - name: Copy Docker packages to remote server
       ansible.builtin.copy:
         src: "/home/ehsan/docker-offline/"
