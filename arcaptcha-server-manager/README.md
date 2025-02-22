@@ -4,7 +4,7 @@ you select.
 One important note is that you need to set your own API key in the .env file.
 When creating the .env file, you also need to make some adjustments.
 In your code you should add this 
-``` 
+```python 
 from dotenv import load_dotenv
 
 import os
