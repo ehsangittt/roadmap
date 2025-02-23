@@ -1,12 +1,13 @@
 ### Turn on/off server in Arvan.
 
-###### step1- `set .env` : You have to set your API_KEY in .env.example 
+###### step1- `set .env` : You need to set your API_KEY in the .env.example file. Once you do this, the code will display the name of the server(s) you have access to. 
 ###### step2- `Usage` 
-`1-regions: ` In arvan you have some region , you have to selecet what region you want to work on it . 
+
+`1-regions:  In arvan you have some region , you have to selecet what region you want to work on it . `
 ---
-`2-servers: ` After selecet region , you have to choose the number of server.
+`2-servers:  After selecet region , you have to choose the number of server.`
 ---
-`3:action : ` After all you have on/off server that you have been choosen.
+`3:action :  Finally, you can turn the chosen server on or off.`
 
 
 
