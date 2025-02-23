@@ -1,12 +1,15 @@
-### With this code you can turn on/off Server that you have in arvan. 
-This code have 5 regions of arvan , after choose the region , this code show the `servers` of the region you have been select.
-after choose the server , aks you `trun on/off` , then depending on your choice the server will be operate.
+### Turn on/off server in Arvan.
 
-`Note: in code you saw dotenv , what is this ? in code , you have to put your api_key to show the servers that you acces to , because it is pravite you have to put it in .env` 
+###### step 1 : `set .env` : You have to set your API_KEY in .env.example 
 
 
 
 
+
+###### step2 : `Usage` 
+`1-regions: ` In arvan you have some region , you have to selecet what region you want to work on it . 
+`2-servers: ` After selecet region , you have to choose the number of server.
+`3:action : ` After all you have on/off server that you have been choosen.
 
 
 
