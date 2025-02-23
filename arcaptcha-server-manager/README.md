@@ -1,18 +1,13 @@
-`This is a documentation for shutting down and restarting servers in Aran.`
-Using this Python code, you can turn off or restart your desired server from the region 
-you select.
-One important note is that you need to set your own API key in the .env file.
-When creating the .env file, you also need to make some adjustments.
-In your code you should add this 
-```python 
-from dotenv import load_dotenv
+### With this code you can turn on/off Server that you have in arvan. 
+This code have 5 regions of arvan , after choose the region , this code show the `servers` of the region you have been select.
+after choose the server , aks you `trun on/off` , then depending on your choice the server will be operate.
 
-import os
+`Note: in code you saw dotenv , what is this ? in code , you have to put your api_key to show the servers that you acces to , because it is pravite you have to put it in .env` 
 
-load_dotenv() 
 
-headers = {
-    'Authorization': os.getenv("SECRET_KEY")
-}
 
-```
+
+
+
+
+
