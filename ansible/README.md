@@ -1,6 +1,6 @@
 ### Here is a doc for you to use ansible.
 First of all you have to add SSH KEY server to `know_hossts`, To do this you have to run this code
-```
+```yml
  ssh-keyscan -H 154.91.170.58 >> ~/.ssh/known_hosts
 
 ```
