@@ -1,5 +1,11 @@
 ### Here is a doc for you to use ansible.
-First of all you have to write playbook.yml.Then you have to run the playbook to know it is work or not.For run the playbook you must have creart inventory.
+First of all you have to add SSH KEY server to `know_hossts`, To do this you have to run this code
+```
+ ssh-keyscan -H 154.91.170.58 >> ~/.ssh/known_hosts
+
+```
+ 
+Then you should  write playbook.yml.For run the playbook you must have creart inventory.
 Here is a question,What is inventory?
 Inventory is file that you have to write the ip of server that you want to push it on.For example if you use vm you have to clone your ubuntu and then change the ip.
 but also you may use server , in invetory you have to put `username@ip_of_server`. but before all you have to do something.

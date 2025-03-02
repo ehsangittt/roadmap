@@ -6,7 +6,7 @@
   tasks:
     - name: Copy Docker packages to remote server
       ansible.builtin.copy:
-        src: "/home/ehsan/docker-offline/"
+        src: "/home/{{ ansible_user }}/Downloads/docker-offline/"
         dest: "/tmp/docker-offline/"
         mode: "0644"
 
@@ -16,11 +16,11 @@
 
     - name: Install Docker CE
       ansible.builtin.apt:
-        deb: "/tmp/docker-offline/docker-ce_27.5.0-1~ubuntu.24.04~noble_amd64.deb"
+        deb: "/tmp/docker-offline/docker-ce_28.0.0-1~ubuntu.24.04~noble_amd64.deb"
 
     - name: Install Docker CE CLI
       ansible.builtin.apt:
-        deb: "/tmp/docker-offline/docker-ce-cli_27.5.0-1~ubuntu.24.04~noble_amd64.deb"
+        deb: "/tmp/docker-offline/docker-ce-cli_28.0.0-1~ubuntu.24.04~noble_amd64.deb"
 
     - name: Enable and start Docker service
       ansible.builtin.systemd:
@@ -30,8 +30,8 @@
 
     - name: Copy Docker Compose binary
       ansible.builtin.copy:
-        src: "/home/ehsan/docker-offline/docker-compose-plugin_2.32.4-1~ubuntu.24.04~noble_amd64.deb"
-        dest: "/tmp/docker-offline/docker-compose-plugin_2.32.4-1~ubuntu.24.04~noble_amd64.deb"
+        src: "/home/ehsan/Downloads/docker-offline/docker-compose-plugin_2.33.0-1~ubuntu.24.04~noble_amd64.deb"
+        dest: "/tmp/docker-offline/docker-compose-plugin_2.33.0-1~ubuntu.24.04~noble_amd64.deb"
         mode: "0755"
 
     - name: Verify Docker installation

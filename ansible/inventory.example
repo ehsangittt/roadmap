@@ -1,6 +1,6 @@
-
 [all]
-IP_____  ansible_user=_____  ansible_ssh_pass=_____
+# example ip=100.10.10.10 ansible_user= ubuntu ansible_ssh_pass=password ansible_become_pass=password
+154.91.170.58  ansible_user=root  ansible_ssh_pass=Ehsan1382 ansible_become_pass=Ehsan1382
 
 
 
