@@ -12,8 +12,7 @@ but also you may use server , in invetory you have to put `username@ip_of_server
 you have to add SSH key to the the destination server. for this job you have to ssh-copy-id user@ip_address
 ### How to run playbook?
 ```
-ansible-playbook -i inventory name of file
-
+ansible-playbook -i inventory "NAME_OF_FILE"
  ```
 
 For example we have to install docker
