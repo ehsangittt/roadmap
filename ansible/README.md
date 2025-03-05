@@ -1,8 +1,7 @@
 ### Here is a doc for you to use ansible.
 First of all you have to add SSH KEY server to `know_hossts`, To do this you have to run this code
 ```yml
- ssh-keyscan -H IP_OF_Destination_SERVER >> ~/.ssh/known_hosts
-
+ ssh-keyscan -H "IP_OF_Destination_SERVER" >> ~/.ssh/known_hosts
 ```
  
 Then you should  write playbook.yml.For run the playbook you must have creart inventory.
@@ -18,10 +17,10 @@ ansible-playbook -i inventory "NAME_OF_FILE"
 For example we have to install docker
 There are 2 ways to install docker
 
-`1- online`
++ `online`
 For the online version, you don’t need to do anything special. Simply run the playbook, and Docker will be installed for you.
 
-`2-offline`
++ `offline`
 To install Docker offline, you need to follow a few steps: You need to install the packages in the link below on a system that has internet access,
 then place the files in the Playbook, depending on the version you download, and then run the Playbook.
 
