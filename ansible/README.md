@@ -11,7 +11,10 @@ Inventory is file that you have to write the ip of server that you want to push 
 but also you may use server , in invetory you have to put `username@ip_of_server`. but before all you have to do something.
 you have to add SSH key to the the destination server. for this job you have to ssh-copy-id user@ip_address
 ### How to run playbook?
-```ansible-playbook -i inventory name of file ```
+```
+ansible-playbook -i inventory name of file
+
+ ```
 
 For example we have to install docker
 There are 2 ways to install docker
