@@ -1,5 +1,5 @@
 ## 🐳 Here is a doc for you to use ansible.
-`Note:`If you are in Iran, Docker is blocked for you, and you need to use a VPN or DNS to access it.
+`Note:`  If you are in Iran, Docker is blocked for you, and you need to use a VPN or DNS to access it.
 
 First of all you have to add SSH KEY server to `know_hossts`, To do this you have to run this code
 ```yml
@@ -30,9 +30,9 @@ For the online version, you don’t need to do anything special. Simply run the 
 To install Docker offline, you need to follow a few steps: You need to install the packages in the link below on a system that has internet access,
 then place the files in the Playbook, depending on the version you download, and then run the Playbook.
 
-+ `Note`: You need to go to  this [link](https://download.docker.com),then select the operating system then the version and finally download the files with the .deb extension
++ `Note:`  You need to go to  this [link](https://download.docker.com),then select the operating system then the version and finally download the files with the .deb extension
 
-+ `Note`: You need to download the files containerd.io , docker-ce , docker-ce-cli , docker-compose-plugin
++ `Note:`  You need to download the files containerd.io , docker-ce , docker-ce-cli , docker-compose-plugin
 After download these files you have to put the file version in vars.yml file like me .
 
 
