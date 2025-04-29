@@ -23,16 +23,16 @@ ansible-playbook -i inventory "NAME_OF_FILE"
 We have to install docker
 There are 2 ways to install docker
 
-+ `online`
++ online
 For the online version, you don’t need to do anything special. Simply run the docker-online.yml , and Docker will be installed for you.
 
-+ `offline`
++ offline
 To install Docker offline, you need to follow a few steps: You need to install the packages in the link below on a system that has internet access,
 then place the files in the Playbook, depending on the version you download, and then run the Playbook.
 
-+ `Note:`  You need to go to  this [link](https://download.docker.com),then select the operating system then the version and finally download the files with the .deb extension
+ `Note:`  You need to go to  this [link](https://download.docker.com),then select the operating system then the version and finally download the files with the .deb extension
 
-+ `Note:`  You need to download the files containerd.io , docker-ce , docker-ce-cli , docker-compose-plugin
+ `Note:`  You need to download the files containerd.io , docker-ce , docker-ce-cli , docker-compose-plugin
 After download these files you have to put the file version in vars.yml file like me .
 
 
