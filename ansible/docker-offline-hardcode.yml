@@ -52,17 +52,24 @@
       ansible.builtin.debug:
         msg: "{{ compose_version.stdout }}"
 
-    - name: Detect current user
-      become: no
-      command: whoami
-      register: current_user
-      changed_when: false
-
    
+- name: Add current user to docker group
+  become: yes
+  hosts: all
+  tasks:
+    - name: Ensure docker group exists
+      group:
+        name: docker
+        state: present
 
     - name: Add user to docker group
       user:
-        name: "{{ current_user.stdout }}"
+        name: "{{ ansible_user }}"
         groups: docker
         append: yes
 
+    - name: Refresh group membership for current session (needs relogin)
+      shell: newgrp docker
+      args:
+        executable: /bin/bash
+      when: ansible_user_id != 'root'
