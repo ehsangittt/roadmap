@@ -1,3 +1,3 @@
 [all]
-#example ip=100.10.10.10 ansible_user= ubuntu ansible_ssh_pass=password ansible_become_pass=password
-
+#example
+#ip100.10.10.10 ansible_user=ubuntu ansible_ssh_pass=password ansible_become_pass=password
