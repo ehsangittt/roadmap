@@ -54,10 +54,23 @@
       ansible.builtin.debug:
         msg: "{{ compose_version_output.stdout }}"
 
-    - name: Add {{ ansible_user_id }} user into docker group
-      become: yes
-      user:
-       name: "{{ ansible_user_id }}"
-       groups: docker 
-       append: yes
+- name: Add current user to docker group
+  become: yes
+  hosts: all
+  tasks:
+    - name: Ensure docker group exists
+      group:
+        name: docker
+        state: present
 
+    - name: Add user to docker group
+      user:
+        name: "{{ ansible_user }}"
+        groups: docker
+        append: yes
+
+    - name: Refresh group membership for current session (needs relogin)
+      shell: newgrp docker
+      args:
+        executable: /bin/bash
+      when: ansible_user_id != 'root'
