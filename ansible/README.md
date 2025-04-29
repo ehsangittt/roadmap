@@ -32,7 +32,8 @@ then place the files in the Playbook, depending on the version you download, and
 
  `Note:`  You need to download the files containerd.io , docker-ce , docker-ce-cli , docker-compose-plugin
 
-<br>After download these files you have to put the file version in vars.yml file like me .
+<br>After downloading the files, just like the file I created (vars.yml), copy the version of each file in front of its corresponding file, and then run the playbook.
+
 
 
 
