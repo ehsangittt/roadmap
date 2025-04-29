@@ -7,10 +7,8 @@ First of all you have to add SSH KEY server to `know_hossts`, To do this you hav
 ```
  
 Then you should  write playbook.yml.For run the playbook you must have creart inventory.
-Here is a question, `What is inventory`?
-Inventory is file that you have to write the ip of server that you want to push it on.
-For example you may use server , in invetory you have to put `username@ip_of_server`. 
-but before all you have to do something.
+<br>By looking at inventory.example, you understand inventory.
+<br>Before all you have to do something.
 you have to add SSH key to the the destination server.
 ```yml
  ssh-copy-id User@IP_OF_Destination_SERVER
@@ -33,7 +31,8 @@ then place the files in the Playbook, depending on the version you download, and
  `Note:`  You need to go to  this [link](https://download.docker.com),then select the operating system then the version and finally download the files with the .deb extension
 
  `Note:`  You need to download the files containerd.io , docker-ce , docker-ce-cli , docker-compose-plugin
-After download these files you have to put the file version in vars.yml file like me .
+
+<br>After download these files you have to put the file version in vars.yml file like me .
 
 
 
