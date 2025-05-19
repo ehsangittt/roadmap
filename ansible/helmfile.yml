@@ -1,0 +1,22 @@
+- name: Install Helmfile
+  hosts: all
+  become: yes
+  tasks:
+
+    - name: Download Helmfile tar.gz
+      get_url:
+        url: "https://github.com/helmfile/helmfile/releases/latest/download/helmfile_Linux_amd64.tar.gz"
+        dest: "/tmp/helmfile.tar.gz"
+
+    - name: Extract helmfile binary
+      unarchive:
+        src: "/tmp/helmfile.tar.gz"
+        dest: "/tmp/"
+        remote_src: yes
+
+    - name: Move helmfile binary to /usr/local/bin
+      copy:
+        src: "/tmp/helmfile"
+        dest: "/usr/local/bin/helmfile"
+        mode: '0755'
+
